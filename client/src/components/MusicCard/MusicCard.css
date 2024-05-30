@@ -1,0 +1,63 @@
+.musiccard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  min-height: 100px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 20px;
+  img {
+    cursor: pointer;
+  }
+}
+
+.musiccard:hover {
+  background-color: #5a5a5a;
+}
+
+.name-artist {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.img-name {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.p-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p:first-child {
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  p:nth-child(2) {
+    color: rgb(165, 165, 165);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+
+.add-btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgb(28, 29, 88);
+  border: none;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.add-btn:hover {
+  background-color: rgb(12, 4, 40);
+}

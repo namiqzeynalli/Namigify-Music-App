@@ -1,0 +1,109 @@
+.playlistDetails-wrapper {
+  position: relative;
+  padding: 10px;
+  color: white;
+  width: 49%;
+  background-color: rgb(17, 17, 17);
+  border-radius: 10px;
+  .playlist-details-heading {
+    text-align: center;
+    margin: auto;
+    margin: 20px 0 35px 0;
+  }
+  .back-arrow {
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 25px;
+    top: 0;
+  }
+  .back-arrow:hover {
+    transform: translateY(-5px);
+  }
+  .back-head {
+    display: flex;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    height: 550px;
+    overflow-y: scroll;
+    li {
+        background-color: rgb(38, 38, 38);
+        min-height: 150px;
+        border-radius: 20px;
+        padding: 20px 30px;
+        gap: 20px;
+        display: flex;
+        /* justify-content: space-around; */
+        /* justify-content: center; */
+        audio {
+            width: 100%;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            margin: auto 0;
+        }
+        .playlist-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            gap: 15px;
+            p {
+                display: flex;
+                gap: 7px;
+                align-items: center;
+            }
+        }
+    }
+    li:hover {
+        background-color: #5a5a5a;
+    }
+  }
+}
+
+.music-name-span {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.artist-name-span {
+    color: rgb(165, 165, 165);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.by {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.delete-about {
+  display: flex;
+  justify-content: space-between;
+  button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(164, 28, 28);
+    color: white;
+    transition: all 0.5s ease;
+    max-height: 35px;
+  }
+  button:hover {
+    background-color: rgb(94, 11, 11);
+  }
+}
