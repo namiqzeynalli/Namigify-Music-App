@@ -24,8 +24,11 @@ const CenterComponent = ({
   };
 
   useEffect(() => {
-    dispatch(getMusics(trackParameters));
-  }, []);
+    if(accessToken) {
+      dispatch(getMusics(trackParameters));
+    }
+    // dispatch(getMusics(trackParameters));
+  }, [accessToken]);
 
   // console.log(data);
   return (
